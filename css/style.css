@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+  background-color: var(--background-bgc);
+
+  overflow: hidden !important;
+}
+
+:root {
+  --background-bgc: #f5f2f0;
+  --font-bgc: #333333;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .wrapper-left .logo img {
+  position: absolute;
+  left: 5%;
+  top: 4rem;
+  width: 8%;
+  z-index: 1;
+
+  background: transparent;
+}
+
+.wrapper .wrapper-right .navbar ul {
+  display: flex;
+  list-style: none;
+}
+.wrapper .wrapper-right .navbar ul li {
+  margin: 4rem 3rem;
+}
+.wrapper .wrapper-right .navbar .nav-items .line {
+  position: absolute;
+  left: 36rem;
+  top: 4.8rem;
+  width: 20%;
+  height: 1.8px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+}
+.wrapper .wrapper-left .dance-image img {
+  position: absolute;
+  top: 0;
+  width: 35rem;
+  height: 800px;
+}
+
+/* -----------------------  Hero Section ----------------------------- */
+.hero {
+  position: relative;
+  top: -3rem;
+  left: 37rem;
+  display: flex;
+}
+.hero h2 {
+  font-family: "Merriweather";
+}
+.hero .title {
+  width: 30%;
+  font-size: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hero .title .main-title > h2 {
+  color: transparent;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: black;
+}
+
+.hero .title .main-title > h2::after {
+  content: "";
+  width: 3rem;
+  height: 0.5rem;
+  display: inline-block;
+  border: 2px solid #817f7f;
+  margin-bottom: 22px;
+}
+.hero .title .sub-title > h2 {
+  margin-left: 120px;
+  margin-top: -2rem;
+}
+
+.hero .sub-heading h3 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 12rem;
+  left: 31rem;
+  opacity: 0.5;
+}
+
+.hero .social-media .icon img {
+  position: relative;
+  top: 1rem;
+  left: 24rem;
+  margin-bottom: 2rem;
+}
+
+.hero .hero-button button {
+  position: absolute;
+  top: 18rem;
+  left: 31rem;
+  padding: 15px 50px;
+  background-color: var(--font-bgc);
+  color: var(--background-bgc);
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+
+/*--------------------------- Dance Show Section ---------------------*/
+.dance-show {
+  display: flex;
+  justify-content: space-around;
+}
+.dance-show .main-dance-right .dance-img img {
+  width: 25rem;
+  height: 250px;
+}
+
+.dance-show .main-dance-right .fa-quote-right {
+  font-size: 2.5rem;
+  opacity: 0.5;
+}
+
+.dance-show .main-dance-right .desc small {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.dance-show .main-dance-left {
+  position: relative;
+  left: 25rem;
+}
+.dance-show .main-dance-left span {
+  background-color: #868686;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: center;
+  margin-right: 20px;
+}
+.dance-show .main-dance-left > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 18px;
+  margin-bottom: 0.8rem;
+}
+
+.dance-show .main-dance-left ul li p {
+  /* border: 2px solid red; */
+  position: relative;
+  color: #898888;
+  left: 2rem;
+  bottom: 30px;
+}
+
+.arrow img {
+  position: absolute;
+  left: 85rem;
+  bottom: -1rem;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+}
+
+.dance-show .main-dance-left ul li .active-circle {
+  background-color: #333333;
+}
+
+.dance-show .main-dance-left ul li .active {
+  color: #333333;
+}
+.dance-show .main-dance-left .lineB {
+  border-left: 2px solid #898888;
+  height: 300px;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .wrapper .wrapper-left .logo img {
+    width: 38%;
+  }
+
+  .wrapper .wrapper-left .dance-image img {
+    display: none;
+  }
+
+  .hero .title {
+    font-size: 3rem;
+    margin-top: 15rem;
+    margin-left: -35rem;
+  }
+
+  .hero .title .sub-title {
+    margin-top: -3rem;
+  }
+
+  .hero .social-media .icon{
+    border: 2px solid red;
+
+  }
+}
