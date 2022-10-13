@@ -27,3 +27,4 @@ and this is responsive for mobile screens and laptop screens
 
 
 ## Deployed Link
+[Dance Landing Page](https://dance-ui-page.netlify.app/)
